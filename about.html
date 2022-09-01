@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <body>
+    <body onload="fetchText()">
         <!--NAV-->
         <nav class="navbar">
             <div class="nav-center">
                 <div class="nav-header">
                     <a href="index.html" class="nav-logo">
-                        <img src="./assets/images/150018274-chef-hat-logo-vector-design-simple.jpg" alt="Recipes">
+                        <img src="./assets/images/chef-logo.png" alt="Recipes">
                     </a>
                     <button type="button" class="btn nav-btn">
-                        <i class="fas.fa-align-justify"></i>
+                        &#9776;
                     </button>
                 </div>
                 <div class="nav-links">
-                    <a href="home.html" class="nav-link">home</a>
+                    <a href="index.html" class="nav-link">home</a>
                     <a href="about.html" class="nav-link">about</a>
-                    <a href="tags.html" class="nav-link">tags</a>
                     <a href="recipes.html" class="nav-link">recipes</a>
                     <a href="contact.html" class="nav-link">contact</a>
+                    <a href="recipewishes.html" class="nav-link">wishes</a>
                 </div>
             </div>    
         </nav>
@@ -43,6 +43,11 @@
                 </div>
             </header>
             <!--end-->
+            <article id="about-container">
+                <h2 id="about-head"></h2>
+                <p id="desc-text1"></p>
+                <p id="desc-text2"></p>
+            </article>
         </main>
         <!---end-->
         

@@ -7,6 +7,7 @@
         <title>Recipes</title>
     </head>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <body>
@@ -15,18 +16,18 @@
             <div class="nav-center">
                 <div class="nav-header">
                     <a href="index.html" class="nav-logo">
-                        <img src="./assets/images/150018274-chef-hat-logo-vector-design-simple.jpg" alt="Recipes">
+                        <img src="./assets/images/chef-logo.png" alt="Recipes">
                     </a>
                     <button type="button" class="btn nav-btn">
-                        <i class="fas.fa-align-justify"></i>
+                        &#9776;
                     </button>
                 </div>
                 <div class="nav-links">
-                    <a href="home.html" class="nav-link">home</a>
+                    <a href="index.html" class="nav-link">home</a>
                     <a href="about.html" class="nav-link">about</a>
-                    <a href="tags.html" class="nav-link">tags</a>
                     <a href="recipes.html" class="nav-link">recipes</a>
                     <a href="contact.html" class="nav-link">contact</a>
+                    <a href="recipewishes.html" class="nav-link">wishes</a>
                 </div>
             </div>    
         </nav>
@@ -43,6 +44,43 @@
                 </div>
             </header>
             <!--end-->
+            <section class="contact-container">
+                <article class="contact-info">
+                <h3>Want To Get In Touch?</h3>
+                <p>
+                  Four dollar toast biodiesel plaid salvia actually pickled banjo
+                  bespoke mlkshk intelligentsia edison bulb synth.
+                </p>
+                <p>Cardigan prism bicycle rights put a bird on it deep v.</p>
+                <p>
+                  Hashtag swag health goth air plant, raclette listicle fingerstache
+                  cold-pressed fanny pack bicycle rights cardigan poke.
+                </p>
+
+              </article>
+              <div class="form-container">
+                <form class="form contact-form">
+              
+                  <label for="fname" class="form-label">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Your name...">
+              
+                  <label for="lname" class="form-label">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email...">
+              
+                  <label for="options" class="form-label">Contact reason</label>
+                  <select id="contact-opt" name="options">
+                    <option value="email">Message to Recipes</option>
+                    <option value="wish">Add a recipe wish</option>
+                  </select>
+              
+                  <label for="subject" class="form-label">Your message</label>
+                  <textarea id="message" name="message"  class="form-textarea" placeholder="Enter text here..."></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+              </section>
         </main>
         <!---end-->
         
