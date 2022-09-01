@@ -1,7 +1,6 @@
 "use strict";
 const getElement = (selector) => {
     const element = document.querySelector(selector);
-    console.log(element);
     if (element)
         return element;
     throw Error(`Please double check your class names, there is no ${selector} class`);
@@ -39,3 +38,35 @@ function fetchText() {
         }
     });
 }
+const elLoginForm = document.querySelector('#myForm');
+function openForm() {
+    if (elLoginForm) {
+        elLoginForm.style.display = "block";
+    }
+}
+function closeForm() {
+    if (elLoginForm) {
+        elLoginForm.style.display = "none";
+    }
+}
+const welcomeText = document.querySelector("#welcomeText");
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const loginBtn = document.querySelector('#loginBtn');
+const myForm = document.querySelector('#myForm');
+function saveInput(event) {
+    event.preventDefault();
+    if (email && password && welcomeText && myForm) {
+        let data = {
+            "email": email.value,
+        };
+        localStorage.setItem("email", data.email);
+        let userEmail = localStorage.getItem("email");
+        let message = `Welcome user: ${userEmail}`;
+        welcomeText.textContent = message;
+    }
+    else {
+        console.error('Something went wrong(saveInput)');
+    }
+}
+myForm === null || myForm === void 0 ? void 0 : myForm.addEventListener('submit', saveInput);
