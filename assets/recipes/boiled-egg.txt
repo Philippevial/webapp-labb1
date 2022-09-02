@@ -1,8 +1,0 @@
-{
- "name": "Boiled egg",
- "prep": "2min",
- "cooking-time": "6min",
- "instructions": "Fill pot with water, bring to a boil.
-		  carefully drop egg in water, boil for 6 min.
-		  Peel, eat."
-}
