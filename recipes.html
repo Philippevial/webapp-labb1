@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Recipes</title>
     </head>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <body onload="fetchText()">
         <!--NAV-->
@@ -32,11 +31,61 @@
         <!---end-->
         <!---main-->
         <main class="page">
-            <article id="recipe-container">
-                <h3 id="recipe-name"></h3>
-                <p id="instructions-output"></p>
-                <p id="cookTime-output"></p>
-            </article>
+            <section class="recipes-container">
+                <h4>Recipes</h4>
+                <!---recipe list-->
+                <div class="recipes-list">
+                    <a href="recipes.html" class="single-recipe">
+                        <img src="assets/images/korvmbrod2.jpg" 
+                        alt="hotdog"
+                        class="recipe-img">
+                    <h5>Hotdog</h5>
+                    <p>Prep : 1min | Cook : 3min</p>
+                    <p class="recipe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi consequatur dignissimos magnam quos numquam iste 
+                        tenetur et ab itaque temporibus.</p></a>
+
+                    <a href="recipes.html" class="single-recipe">
+                            <img src="assets/images/spaghetti.jpg" 
+                            alt="Spagetti"
+                            class="recipe-img">
+                    <h5>Boiled Spagetti</h5>
+                    <p>Prep : 2min | Cook : 8min</p>
+                    <p class="recipe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi consequatur dignissimos magnam quos numquam iste 
+                        tenetur et ab itaque temporibus.</p></a>
+
+                    <a href="recipes.html" class="single-recipe">
+                            <img src="assets/images/boiled-egg.jpg" 
+                            alt="boiled-egg"
+                            class="recipe-img">
+                    <h5>Boiled egg</h5>
+                    <p>Prep : 30sek | Cook : 6min</p>
+                    <p class="recipe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi consequatur dignissimos magnam quos numquam iste 
+                        tenetur et ab itaque temporibus.</p></a>
+
+                    <a href="recipes.html" class="single-recipe">
+                            <img src="assets/images/water.jpg" 
+                            alt="glass of water"
+                            class="recipe-img">
+                    <h5>Glass of water</h5>
+                    <p>Prep : 30sek | Cook : 10sek</p>
+                    <p class="recipe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi consequatur dignissimos magnam quos numquam iste 
+                        tenetur et ab itaque temporibus.</p></a>
+
+                    <a href="recipes.html" class="single-recipe">
+                        <img src="assets/images/buttered-toast.jpg" 
+                        alt="Buttered toast image"
+                        class="recipe-img">
+                    <h5>Buttered toast</h5>
+                    <p>Prep : 1,3min | Cook : 3min</p>
+                    <p class="recipe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi consequatur dignissimos magnam quos numquam iste 
+                        tenetur et ab itaque temporibus.</p></a>
+                </div>
+            </section>
         </main>
         <!---end-->
         <!--FOOTER-->

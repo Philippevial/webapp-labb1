@@ -53,6 +53,7 @@ function fetchText(){
   
     function openForm() {
       if(elLoginForm) {
+        
         elLoginForm.style.display = "block";
       }
     }
