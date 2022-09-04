@@ -18,7 +18,7 @@ const elAboutHead = document.querySelector('#about-head');
 const elDescText1 = document.querySelector('#desc-text1');
 const elDescText2 = document.querySelector('#desc-text2');
 function fetchText() {
-    fetch('/assets/recipes/boiled-egg.json')
+    fetch('/assets/recipes/about-text.json')
         .then(response => response.json()).then(data => {
         if (elDescText1 && elDescText2 && elAboutContainer && elAboutHead) {
             let head = data.header;
