@@ -92,4 +92,18 @@ function fetchText(){
   myForm?.addEventListener('submit', saveInput);
 
 
+  function outputMessage(event: Event) {
+    if(welcomeText) {
+      let storedEmail = localStorage.getItem("email");
+
+      if(storedEmail) {
+        let message = `Welcome user: ${storedEmail}`;
+        welcomeText.textContent = message;
+      }
+    } else {
+      console.error('Something went wrong(outputMessage)')
+    }
+
+      console.log('hello')
+  }
 

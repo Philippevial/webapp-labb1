@@ -70,3 +70,17 @@ function saveInput(event) {
     }
 }
 myForm === null || myForm === void 0 ? void 0 : myForm.addEventListener('submit', saveInput);
+
+function outputMessage(event) {
+    if (welcomeText) {
+        let storedEmail = localStorage.getItem("email");
+        if (storedEmail) {
+            let message = `Welcome user: ${storedEmail}`;
+            welcomeText.textContent = message;
+        }
+    }
+    else {
+        console.error('Something went wrong(outputMessage)');
+    }
+    console.log('hello');
+}

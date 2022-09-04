@@ -195,6 +195,7 @@ ul {
     align-items: center;
     justify-content: center;
     opacity: 0.65;
+
   }
 
   .footer p {
@@ -234,6 +235,8 @@ ul {
  .recipes-container {
   display: grid;
  }
+
+
 
  .recipe h5{
   margin-bottom: 0;
@@ -275,7 +278,7 @@ ul {
 
 
  /**Phone**/
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   
   .banner-text h1{
     font-size: 4rem;
@@ -291,7 +294,8 @@ ul {
   }
   
   .recipe-img {
-    max-width: 100%;
+    width: 22rem;
+    height: 22rem;
   }
 
   .contact-container{
@@ -309,11 +313,18 @@ ul {
     margin-bottom: 0;
   }
   
+  #about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-div{
+    padding-right: 1rem;
+  }
 
 }
 
-/****Tablet and larger****/
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .nav-btn {
     display: none;
   }
@@ -363,8 +374,10 @@ ul {
     flex-wrap: wrap;
   }
 
+
   .recipe-img {
-    height: 10rem;
+    height: 20rem;
+    width: 20rem;
   }
 
   #about-container{
@@ -375,6 +388,75 @@ ul {
   .about-div{
     padding-right: 1rem;
   }
+
+}
+
+/****Tablet and larger****/
+@media only screen and (min-width: 920px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .navbar {
+    height: 6rem;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+  }
+
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-link {
+    margin-left: auto;
+  }
+
+  .banner-text h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .recipes-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+
+
+  .recipe-img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  #about-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-div{
+    padding-right: 1rem;
+  }
+
 }
   
  
