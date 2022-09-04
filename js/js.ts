@@ -24,7 +24,7 @@ const elDescText2: HTMLParagraphElement | null = document.querySelector('#desc-t
 
 
 function fetchText(){
-  fetch('/assets/recipes/boiled-egg.json')
+  fetch('/assets/recipes/about-text.json')
     
     .then(response => response.json()).then(data => {
         if(elDescText1 && elDescText2 && elAboutContainer && elAboutHead) {
